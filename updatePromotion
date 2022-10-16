@@ -1,0 +1,10 @@
+Le code commence par exiger le fichier "../business/promotionBLL.php".
+ Le code crée ensuite un objet promotionBAL et l'affecte à $promotion.
+ S'il y a un identifiant dans l'URL, le code appellera getPromotionById() sur l'objet promotionBAL avec cet identifiant comme argument.
+ S'il y a une requête POST, il utilisera updatePromotion() pour modifier les informations sur une promotion spécifique.
+ Le code est un exemple de script PHP qui utilise la classe PromotionBLL pour récupérer et mettre à jour les promotions.
+ Le code commence par demander le fichier "business/promotionBLL.php" qui contient les méthodes de la classe PromotionBLL.
+ Le code crée ensuite un nouvel objet de promotion, l'affecte à $promotionBAL et vérifie si $_GET['id'] est défini.
+ Si $_GET['id'] est défini, alors $id sera assigné à $_GET['id'].
+ Ensuite, s'il y a une mise à jour postée via POST, alors $id sera assigné à $_POST['id'].
+ Enfin, s'il n'y a pas eu de mise à jour publiée via POST mais qu'il y en a eu une via GET, alors location: index.
